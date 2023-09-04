@@ -1,11 +1,15 @@
 {
   "name": "@lotaher/ez-ignore",
   "license": "MIT",
+  "description": "Create a custom .gitignore file straight from the terminal.",
   "version": "0.0.1",
   "type": "module",
   "main": "dist/index.js",
   "module": "dist/index.mjs",
   "types": "dist/index.d.ts",
+  "bin": "dist/index.js",
+  "private": false,
+  "author": "Laith Taher",
   "scripts": {
     "build": "tsup src/index.ts --format cjs,esm --dts",
     "release": "pnpm run build && changeset publish",
